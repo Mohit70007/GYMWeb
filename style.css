@@ -1,0 +1,295 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.navbar{
+    background-color: black;  
+    position: fixed;
+    
+}
+.navbar-brand h2{
+    color:#68d80d;
+    font-size: 28px;
+    padding: 3.5%;
+}
+.navbar-brand span{
+    color: #fff;
+    font-size: 20px;
+}
+
+.navbar-nav .nav-link{
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.navbar-nav  .nav-link:hover{
+    border-bottom: 2px solid #68d80d;
+    color: #68d80d;
+      
+}
+
+/* ------------------------------ Main Section ----------------------------------- */
+.main{
+    background-image: url("img/img1.jpg");
+    background-size: cover;
+    width: 100%;
+    height:calc(100% - 100px);
+    clip-path: polygon(100% 0, 100% 87%, 52% 100%, 0 85%, 0 0);
+}
+.main h2{
+    font-size: 5rem;
+    font-weight: 800;
+    color: #bababb;
+}
+.main h2 span{
+    color: #68d80d;
+}
+.main h4 span{
+    font-size:17px;
+    color:#bababb;
+}
+.main h4{
+    font-size: 25px;
+    color:#68d80d ;
+}
+main h4 h2{
+    margin-left: 20rem;
+}
+
+.btn1{
+    height:50px;
+    width: 120px;
+    color: white;
+    font-size:20px;
+    font-weight: 600;
+    border: 2px solid #68d80d;
+    background-color: #68d80d;
+    border-radius: 5%;
+}
+.btn1 :hover{
+    opacity: 0.5;
+}
+
+/* ----------------------- Equipments details ------------------------------ */
+
+.equip{
+    margin-top: -50px;
+}
+.equip h4{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.equip h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.equip a{
+    text-decoration: none;
+    color: #68d80d;
+}
+.equip p{
+    font-weight:lighter;
+}
+.back:hover{
+    color: white;
+    cursor: pointer;
+}
+.back{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.8s;
+}
+.back::before{
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background:linear-gradient(90deg ,#6ee085fc  0%, #68d80d 100%);
+    z-index: -1;
+    transition: all 0.8s;
+}
+.back:hover::before{
+    height: 100%;
+}
+.back:hover a{
+    color: white;
+    cursor: pointer;
+}
+
+/* -------------------------- More section -------------------------- */
+
+.more h2{
+    font-weight: 800;
+}
+.more span{
+    color: #68d80d;
+}
+.more p{
+    font-weight: lighter;
+}
+p{
+    font-size: 20px;
+}
+
+/* ------------------------------ Discover -------------------------------------- */
+
+.discover{
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(img/rockimg.jpg);
+    background-size: cover;
+    width: 100%;
+}
+.discover h1{
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+.discover p{
+    font-weight: 500;
+}
+.discover span{
+    color: #68d80d;
+}
+.btn1{
+    border-radius: 15px;
+}
+
+/* --------------------------------- Services ------------------------------------- */
+
+.services h1{
+    font-weight: 800;
+    font-size: 2.5 rem;
+    
+}
+.services h5{
+    font-weight: 700;
+}
+.fas{
+    font-size: 2.5rem;
+}
+
+/* ============================= Courses ============================= */
+.courses h1{
+    font-weight: 800;
+    font-size: 2.8rem;
+}
+.courses .card{
+    border: none;
+}
+p{
+    font-weight: lighter;
+}
+.btn2{
+    height:50px;
+    color: white;
+    font-size:17px;
+    font-weight: 600;
+    border: 2px solid #68d80d;
+    background-color: #68d80d;
+    border-radius: 18px;
+    
+}
+.gallery h1{
+    font-weight: 800;
+}
+/* ---------------------------- Contact Section ---------------------------------------- */
+#Contact {
+    padding: 50px;
+    text-align: center;
+    background-color: #68d80d;
+  }
+  #Contact h2{
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    margin-bottom: 20px;
+    font-weight: 800;
+    
+  }
+  
+  #Contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 800;
+  }
+  
+  #Contact-form label {
+    margin-bottom: 10px;
+    font-weight: 800;
+  }
+  
+  #Contact-form input,
+  #Contact-form textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-weight: 800;
+    border: 2px solid #68d80d;
+  }
+  
+  #Contact-form button {
+    background-color: #262924;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+/*-------------------------------Footer--------------------------------*/
+
+.footer{
+    background-color: #1a1741;
+    color: #fff;
+    margin-top: 10%;
+}
+.footer h4,h5{
+    font-weight: 900;
+}
+.footer h5{
+    font-weight: 900;
+}
+.footer p{
+    margin: 0;
+    color: teal;
+}
+.link {
+    cursor: pointer;
+    transition: all 0,5s;
+}
+.link:hover{
+    color: #68d80d;
+    padding-left: 5px;
+    transition: all 0.5s;
+}
+
+.fa-angle-double-right{
+    font-size: 18px;
+    color: teal;
+}
+.fa-angle-double-right:hover{
+    color: #68d80d;
+}
+.social_icon{
+    color: white;
+    font-size: 24px;
+    transition: all 0.4s;
+}
+.social_icon:hover{
+    color: #68d80d;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.footer .card{
+    background: black;
+    border-radius: 0;
+    
+}
